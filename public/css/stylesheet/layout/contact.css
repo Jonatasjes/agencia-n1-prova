@@ -1,0 +1,89 @@
+section.contact .contact-info ul, section.contact .contact-form p {
+  color: #084154;
+}
+
+section.contact .contact-form #form-buttom, section.contact .contact-form .form-control {
+  color: #fff;
+}
+
+section.contact .contact-form #form-buttom {
+  background-color: #3EC6E0;
+}
+
+section.contact .contact-form .form-control {
+  background-color: #fff;
+}
+
+section.contact {
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 110px;
+}
+section.contact .contact-form {
+  align-items: center;
+  margin-bottom: 110px;
+}
+section.contact .contact-form .error {
+  width: 100%;
+  justify-content: space-around;
+}
+section.contact .contact-form .error div {
+  width: auto !important;
+  margin: 0 10px;
+}
+section.contact .contact-form .error div p {
+  width: auto !important;
+  text-align: center;
+  color: #ff0000;
+  margin: 0;
+  font-size: 12px;
+}
+section.contact .contact-form p {
+  width: 600px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+section.contact .contact-form .form-input, section.contact .contact-form .form-msg, section.contact .contact-form .form-sub {
+  margin: 10px 0;
+}
+section.contact .contact-form .form-control {
+  width: 577px;
+  border: transparent;
+  border-bottom: 1px solid #3EC6E0;
+  background-color: rgba(62, 198, 224, 0.5);
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  color: #000;
+  letter-spacing: 1.5px;
+  transition: all 0.3s ease;
+}
+section.contact .contact-form #message {
+  height: 150px !important;
+  margin: 0;
+}
+section.contact .contact-form #form-buttom {
+  justify-content: center;
+  width: 600px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+section.contact .contact-info {
+  margin-top: -15px;
+  margin-bottom: 110px;
+}
+section.contact .contact-info ul li {
+  margin: 15px 0;
+}
+section.contact .contact-info ul li h6 {
+  font-size: 16px;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+section.contact .contact-info ul li span {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=contact.css.map */

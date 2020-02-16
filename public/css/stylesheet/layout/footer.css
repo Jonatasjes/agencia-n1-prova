@@ -1,0 +1,33 @@
+footer section.bottom .bottom-info p {
+  color: #fff;
+}
+
+footer section.bottom .bottom-info {
+  background-color: #3EC6E0;
+}
+
+footer section.bottom .bottom-logo {
+  background-color: #084154;
+}
+
+footer {
+  margin-top: 150px;
+}
+footer section.bottom {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  height: 100px;
+}
+footer section.bottom .bottom-logo {
+  justify-content: flex-end;
+}
+footer section.bottom .bottom-logo h1 {
+  margin-right: 48px;
+  height: 39.06px;
+}
+footer section.bottom .bottom-info p {
+  margin-left: 35px;
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=footer.css.map */

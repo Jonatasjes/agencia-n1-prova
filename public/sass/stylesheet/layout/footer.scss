@@ -1,0 +1,28 @@
+@import '../base/placeholders';
+@import '../base/variables';
+
+footer {
+    margin-top: 150px;
+    section.bottom {
+        display: grid;
+        grid-template-columns: 25% 75%;
+        height:100px;
+        .bottom-logo {
+            justify-content: flex-end;
+            @extend %u-bakground-color-secondary;
+            h1 {
+                margin-right: 48px;
+                height: 39.06px;
+            }
+        }
+        .bottom-info {
+            @extend %u-bakground-color-primary;
+            p {
+                margin-left: 35px;
+                font-size: 16px;
+                @extend %u-third-color;
+            }
+        }
+        
+    }
+}

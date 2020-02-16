@@ -1,0 +1,107 @@
+@import '../base/placeholders';
+@import '../base/variables';
+
+.main {
+    section.banner-games {
+        max-width: 1216px;
+        margin: -40px auto auto auto;
+        padding-bottom: 35px;
+        @extend %u-justify-content-center-wrap;
+        a {
+            z-index: 1;
+            .banner-game {
+                width: 588px;
+                height: 357px;
+                margin: 10px;
+                @extend %u-background-cover-center;
+                @extend %u-flex-align-justify-end;
+                svg {
+                    height: 70px;
+                    width: 100px;
+                    position: relative;
+                    right: -1px;
+                    bottom: 17px;
+                    fill: $color-primary;
+                    transform: scale(1.5);
+                }
+                span {
+                    position: relative;
+                    right: 16px;
+                    font-size: 45px;
+                    @extend %u-third-color;
+                }
+            }
+        }
+        .banner-game-1 {
+            background-image: url(../../../src/img/zelda_banner.jpg);
+        }
+        .banner-game-2 {
+            background-image: url(../../../src/img/sekiro_banner.jpg);
+        }
+    }
+    section.featured-products {
+        max-width: 1216px;
+        margin: auto;
+        padding-top: 35px;
+        .products-title {
+            padding-left: 10px;
+            svg {
+                width: 23px;
+                height: 23px;
+                rect {
+                    fill: $color-primary;
+                }
+            }
+            h2 {
+                margin-left: 17px;
+                font-size: $font-size-text-secondary-title;
+                @extend %u-color-secondary;
+            }
+        }
+        .products-shelf-mobile {
+            display: none;
+        }
+        .products-shelf {
+            margin: 50px 0;
+            @extend %u-justify-content-center-wrap;
+            
+            .product {
+                width: 284px;
+                margin: 0 10px;
+                div {
+                    margin: 30px 0;
+                }
+                .banner-product {
+                    height: 300px;
+                    @extend %u-bakground-fifth-color;
+                }
+                .info-product {
+                    h2, h6 {
+                        @extend %u-color-secondary;
+                    }
+                    h2 {
+                        font-size: $font-size-text-featured-title;
+                    }
+                    h6 {
+                        font-size: $font-size-text-featured-price;
+                        sup {
+                            font-size: $font-size-text-featured-price-sup;
+                        }
+                    }
+                }
+                .buy-product {
+                    justify-content: center;
+                    width: 100%;   
+                    height: 50px; 
+                    border-radius: 5px;
+                    cursor: pointer;
+                    @extend %u-bakground-color-primary;
+                    span {
+                        font-size: $font-size-text-featured-buy;
+                        @extend %u-third-color;
+                    }
+                }
+            }
+        }
+    }
+}

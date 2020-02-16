@@ -1,0 +1,66 @@
+<section class="contact d-flex-row">
+    <form action="/envio" method="POST" class="contact-form d-flex-column"> 
+        <p class="font-roboto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="error d-flex-row">
+            {{#each erros}}
+                <div>
+                    <p class="font-roboto">{{texto}}</p>
+                </div>
+            {{else}}
+            {{/each}}
+        </div>
+        <div class="form-input d-flex-column">
+            <input type="text"  name="name" class="form-control font-roboto" id="name" placeholder="Seu nome*">
+            <input type="email" name="email" class="form-control font-roboto" id="email" placeholder="Seu email*">
+        </div>
+        <div class="form-msg">
+            <textarea name="message" class="form-control font-roboto" id="message" rows="10" placeholder="Sua mensagem*"></textarea>
+        </div>
+        <div class="form-sub">
+            <button  type="submit" id="form-buttom" class="form-control font-roboto">Envie</button>
+        </div>
+    </form>
+    <div class="contact-info">
+        <ul class="font-roboto">
+            <li>
+                <h6 >Phone</h6>
+                <span >+21 0000 0000</span>
+            </li>
+            <li>
+                <h6>E-mail</h6>
+                <span>support@agencian1.com</span>
+            </li>
+            <li>
+                <h6>Horário de funcionamento</h6>
+                <span>Seg-Sex &nbsp;&nbsp;09:00 - 21:00</span>
+            </li>
+            <li>
+                <h6>Endereço</h6>
+                <span>Rua São João<br>Rio de Janeiro, RJ</span>
+            </li>
+        </ul>
+    </div>
+</section>
+
+{{#each response}}
+    <aside id="form-completed-display" class="form-completed-display">
+        <div class="form-completed">
+            <div class="form-completed-box">
+                <a class="close-form-completed">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42.426" height="42.426" viewBox="0 0 42.426 42.426">
+                        <g id="close_btn" transform="translate(12.279 12.061)">
+                        <circle id="Elipse_2" data-name="Elipse 2" cx="15" cy="15" r="15" transform="translate(-12.279 9.152) rotate(-45)" fill="#f55959"/>
+                        <rect id="Retângulo_14" data-name="Retângulo 14" width="2" height="19" transform="translate(1.863 3.495) rotate(-45)" fill="#fff"/>
+                        <rect id="Retângulo_15" data-name="Retângulo 15" width="2" height="18" transform="translate(14.591 2.081) rotate(45)" fill="#fff"/>
+                        </g>
+                    </svg>
+                </a>
+                <div class="form-completed-info">
+                    <img src="src/img/fig_lightbox.png" width="77px" height="109px">
+                    <p class="font-roboto">Email enviado com sucesso.</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+{{else}}
+{{/each}}

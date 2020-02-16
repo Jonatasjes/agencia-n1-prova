@@ -1,0 +1,24 @@
+@import '_variables.scss';
+// ==========================================================================
+// Colors  
+// ==========================================================================
+%u-color-primary { color: $color-primary; }
+%u-color-secondary { color: $color-secondary; }
+%u-third-color { color: $third-color; }
+%u-fourth-color { color: $fourth-color}
+%u-fifth-color { color: $fifth-color }
+
+%u-bakground-color-primary { background-color: $color-primary; }
+%u-bakground-color-secondary { background-color: $color-secondary; }
+%u-bakground-third-color { background-color: $third-color; }
+%u-bakground-fifth-color { background-color: $fifth-color; }
+// ==========================================================================
+// Background
+// ==========================================================================
+%u-background-cover-center { background-size: cover; background-position: center; background-repeat: no-repeat; }
+// ==========================================================================
+// Flexbox
+// ==========================================================================
+%u-flex-align-justify-end { display: flex; align-items: flex-end; justify-content: flex-end; }
+%u-justify-content-center-wrap { justify-content: center; flex-wrap: wrap; }
+

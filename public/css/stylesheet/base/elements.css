@@ -1,0 +1,36 @@
+.d-flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.my-container {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.selected {
+  display: block;
+}
+
+.no-display {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .my-container {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+/*# sourceMappingURL=elements.css.map */

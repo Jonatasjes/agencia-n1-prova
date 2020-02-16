@@ -1,0 +1,83 @@
+@import '../base/placeholders';
+@import '../base/variables';
+
+section.contact {
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 110px;
+    .contact-form {
+        align-items: center;
+        margin-bottom: 110px;
+        .error {
+            width: 100%;
+            justify-content: space-around;
+            div {
+                width: auto!important;
+                margin: 0 10px;
+                p {
+                    width: auto!important;
+                    text-align: center;
+                    color: #ff0000;
+                    margin: 0;
+                    font-size: 12px;
+                }
+            }
+        }
+        p {
+            width: 600px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            @extend %u-color-secondary;
+        }
+        .form-input , .form-msg, .form-sub {
+            margin: 10px 0;
+        }
+
+        .form-control {
+            width: 577px;
+            @extend %u-bakground-third-color;
+            border: transparent;
+            border-bottom: 1px solid $color-primary;
+            background-color: rgba(62, 198, 224, .5);
+            padding: 10px;
+            margin: 10px 0;
+            cursor: pointer;
+            color: #000;
+            letter-spacing: 1.5px;
+            transition: all .3s ease;
+            @extend %u-third-color;
+        }
+        #message {
+            height: 150px!important;
+            margin: 0;
+        }
+        #form-buttom {
+            justify-content: center;
+            width: 600px;   
+            height: 50px; 
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            @extend %u-third-color;
+            @extend %u-bakground-color-primary;
+        } 
+    }
+    .contact-info {
+        margin-top: -15px;
+        margin-bottom: 110px;
+        ul {
+            @extend %u-color-secondary;
+            li {
+                margin: 15px 0;
+                h6 {
+                    font-size: 16px;
+                    margin: 10px 0;
+                    text-transform: uppercase;
+                }
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

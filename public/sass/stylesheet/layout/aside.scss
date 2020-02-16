@@ -1,0 +1,88 @@
+aside {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    .buy-completed {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding-top: 200px;
+        background-color: rgba(0,0,0,.7);
+        
+        .buy-completed-box {
+            width: 307px;
+            height: 436px;
+            display: grid;
+            grid-template-rows: 20% 80%;
+            background-color: #fff;
+            .close-buy-completed {
+                justify-self: end;
+                cursor: pointer;
+                margin: 10px;
+            }
+            .buy-completed-info {
+                justify-self: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 20px;
+                p {
+                    margin: 25px;
+                    text-align: center;
+                    font-size: 28px;
+                    color: #084154;
+                }
+                
+            }
+        }
+    }
+
+}
+
+aside {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    .form-completed {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding-top: 200px;
+        background-color: rgba(0,0,0,.7);
+        
+        .form-completed-box {
+            width: 307px;
+            height: 436px;
+            display: grid;
+            grid-template-rows: 20% 80%;
+            background-color: #fff;
+            .close-form-completed {
+                justify-self: end;
+                cursor: pointer;
+                margin: 10px;
+            }
+            .form-completed-info {
+                justify-self: center;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 20px;
+                p {
+                    margin: 25px;
+                    text-align: center;
+                    font-size: 28px;
+                    color: #084154;
+                }
+                
+            }
+        }
+    }
+}
